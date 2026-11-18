@@ -1,0 +1,173 @@
+.patient-profile-page {
+  min-height: 100%;
+  padding: 34px;
+  background: #f7faff;
+}
+
+.profile-header {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+  color: #1769aa;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.profile-header h1 {
+  margin: 0;
+  color: #16324f;
+  font-size: 34px;
+}
+
+.profile-header p:last-child {
+  margin: 8px 0 0;
+  color: #718096;
+}
+
+.profile-success,
+.profile-error {
+  margin-bottom: 20px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.profile-success {
+  background: #edf8f1;
+  color: #27734d;
+}
+
+.profile-error {
+  background: #fff1f1;
+  color: #c53030;
+}
+
+.profile-loading {
+  padding: 40px;
+  color: #718096;
+  background: #f7faff;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #e1ebf5;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(27, 71, 103, 0.05);
+}
+
+.profile-card-heading {
+  margin-bottom: 22px;
+}
+
+.profile-card-heading h2 {
+  margin: 0 0 6px;
+  color: #16324f;
+  font-size: 20px;
+}
+
+.profile-card-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.address-heading {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid #edf2f7;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.profile-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.profile-field label {
+  color: #334e68;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.profile-field input,
+.profile-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d7e3ee;
+  border-radius: 8px;
+  color: #243b53;
+  background: white;
+  font: inherit;
+  outline: none;
+}
+
+.profile-field input:focus,
+.profile-field select:focus {
+  border-color: #1769aa;
+}
+
+.profile-field input:disabled {
+  background: #f5f7fa;
+  color: #718096;
+  cursor: not-allowed;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid #edf2f7;
+}
+
+.profile-actions button {
+  border: none;
+  background: #1769aa;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-actions button:hover {
+  background: #12578d;
+}
+
+.profile-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .patient-profile-page {
+    padding: 20px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-field.full-width {
+    grid-column: auto;
+  }
+
+  .profile-card {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,241 @@
+.doctor-settings-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.doctor-settings-heading {
+  margin-bottom: 28px;
+}
+
+.doctor-settings-heading h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 34px;
+}
+
+.doctor-settings-heading p {
+  margin: 8px 0 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.doctor-settings-success {
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.doctor-settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.doctor-settings-card {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e1ebf5;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(31, 60, 90, 0.04);
+}
+
+.doctor-settings-wide {
+  grid-column: 1 / -1;
+}
+
+.doctor-settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 18px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.doctor-settings-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #eaf2ff;
+  color: #2563eb;
+  font-size: 17px;
+}
+
+.doctor-settings-card-heading h2 {
+  margin: 0;
+  color: #263449;
+  font-size: 16px;
+}
+
+.doctor-settings-card-heading p {
+  margin: 4px 0 0;
+  color: #8290a3;
+  font-size: 11px;
+}
+
+.doctor-setting-row,
+.doctor-system-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 17px 0;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.doctor-setting-row:last-child,
+.doctor-system-row:last-child {
+  border-bottom: 0;
+}
+
+.doctor-setting-row strong,
+.doctor-system-row strong {
+  display: block;
+  color: #263449;
+  font-size: 13px;
+}
+
+.doctor-setting-row span,
+.doctor-system-row span {
+  display: block;
+  margin-top: 4px;
+  color: #8290a3;
+  font-size: 11px;
+}
+
+.doctor-toggle {
+  position: relative;
+  flex-shrink: 0;
+  width: 42px;
+  height: 23px;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.doctor-toggle span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.doctor-toggle.active {
+  background: #2563eb;
+}
+
+.doctor-toggle.active span {
+  left: 22px;
+}
+
+.doctor-account-info {
+  display: grid;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.doctor-account-info div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #edf2f7;
+}
+
+.doctor-account-info div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.doctor-account-info span {
+  color: #8290a3;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.doctor-account-info strong {
+  color: #263449;
+  font-size: 12px;
+}
+
+.doctor-system-row select {
+  min-width: 190px;
+  padding: 9px 11px;
+  border: 1px solid #dce7f3;
+  border-radius: 8px;
+  outline: 0;
+  background: #f9fbfe;
+  color: #263449;
+  font-size: 12px;
+}
+
+.doctor-settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.doctor-save-settings {
+  height: 43px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.doctor-save-settings:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 750px) {
+  .doctor-settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-settings-wide {
+    grid-column: auto;
+  }
+
+  .doctor-setting-row,
+  .doctor-system-row {
+    align-items: flex-start;
+  }
+
+  .doctor-system-row {
+    flex-direction: column;
+  }
+
+  .doctor-system-row select {
+    width: 100%;
+  }
+
+  .doctor-settings-actions {
+    justify-content: stretch;
+  }
+
+  .doctor-save-settings {
+    width: 100%;
+  }
+}

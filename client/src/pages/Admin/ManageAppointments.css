@@ -1,0 +1,14 @@
+.manage-appointments-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.type-tag {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
